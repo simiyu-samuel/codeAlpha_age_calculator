@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card p-4 bg-white text-center">
+            <h2 class="mb-4 text-primary">Age Calculator</h2>
+            <div class="row g-2">
+              <div class="col">
+                <input
+                  type="number"
+                  id="day"
+                  class="form-control"
+                  placeholder="Day"
+                  min="1"
+                  max="31"
+                  required
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="number"
+                  id="month"
+                  class="form-control"
+                  placeholder="Month"
+                  min="1"
+                  max="12"
+                  required
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="number"
+                  id="year"
+                  class="form-control"
+                  placeholder="Year"
+                  min="1900"
+                  max="2100"
+                  required
+                />
+              </div>
+            </div>
+            <button class="btn btn-primary w-100 mt-4" onclick="calculateAge()">
+              Calculate My Age
+            </button>
+            <div id="result" class="text-success fw-bold"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
